@@ -45,6 +45,10 @@ h1 {
           transform: translateY(42px);
 }
 
+.texts {
+  height: 90%;
+}
+
 .black {
   background-color: #1c1717;
   padding: 50px;
@@ -55,7 +59,7 @@ h1 {
   background-color: white;
   color: #1c1717;
   padding: 50px;
-  min-width: 300px;
+  min-width: 350px;
 }
 
 h3,
@@ -99,8 +103,7 @@ p {
 .button {
   border: none;
   background-color: #22b573;
-  width: 450px;
-  margin-left: -50px;
+  padding-top: 5px;
   text-align: left;
 }
 
@@ -122,9 +125,8 @@ p {
             transform: translateY(30px);
     background-color: white;
   }
-  .black,
-  .white {
-    min-width: none;
+  .texts {
+    min-width: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */
