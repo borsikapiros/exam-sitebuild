@@ -8,14 +8,24 @@ body {
     box-sizing: border-box;
     background-color: $green;
     color: white;
-    font-family: "Lora", serif;
+    font-family: "Quicksand", sans-serif;
 }
 
-h3,
-h4,
-h5,
-button {
-    color: $orange;
+h1 {
+    letter-spacing: 3px;
+    margin: 50px 0 100px;
+    font-size: 70px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.headline {
+    margin: 60px;
+}
+
+.main {
+    margin: 0px 5vw;
+    padding-bottom: 20px;
 }
 
 .hamburger {
@@ -23,7 +33,7 @@ button {
     width: 150px;
     height: 150px;
     position: absolute;
-    margin-left: 87vw;
+    margin-left: 80vw;
 }
 
 .hamb-line {
@@ -33,41 +43,91 @@ button {
     height: 12px;
     margin-bottom: 15px;
     background-color: white;
-    margin-left: 37px;
+    margin-left: 22px;
     transform: translateY(42px);
 }
 
 .black {
     background-color: $grey;
+    padding: 50px;
+    min-width: 350px;
+}
+
+.white {
+    background-color: white;
+    color: $grey;
+    padding: 50px;
+    min-width: 300px;
+}
+
+h3,
+h4 {
+    padding-top: 10px;
+}
+
+h3,
+h4,
+button {
+    color: $orange;
+}
+
+p {
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.playcontainer {
+    height: 150px;
+    width: 150px;
+    border: 2px solid white;
+    background-color: $grey;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.play {
+    width: 74px;
+    height: 74px;
+    position: absolute;
+    margin: 35px 0 0 45px;
+    background-color: $grey;
+    border-style: solid;
+    border-width: 37px 0px 37px 74px;
+    border-color: transparent transparent transparent white;
+}
+
+.button {
+    border: none;
+    background-color: $green;
+    width: 450px;
+    margin-left: -50px;
+    text-align: left;
 }
 
 @media (max-width: 1000px) {
     h1 {
-        font-size: 60px;
-        width: 80vw;
-        margin-top: 100px;
+        font-size: 40px;
     }
 
     .hamburger {
-        width: 70px;
-        height: 70px;
-        border-radius: 35px;
-        margin-left: 75vw;
-        margin-top: -80px;
-        border: 3px solid $light;
-        background-color: $dark;
+        width: 90px;
+        height: 90px;
+        margin-left: 70vw;
     }
 
     .hamb-line {
-        width: 40px;
-        height: 5px;
+        width: 45px;
+        height: 6px;
         margin-bottom: 8px;
-        margin-left: 15px;
-        transform: translateY(20px);
-        background-color: $light;
+        margin-left: 10px;
+        transform: translateY(30px);
+        background-color: white;
     }
 
-    .lorem {
-        width: 70vw;
+    .black,
+    .white {
+        min-width: none;
     }
 }

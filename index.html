@@ -9,20 +9,27 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-    <title>Morella</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <title>Media appearences</title>
 </head>
 
 <body>
-    <h1>MEDIA APPEREANCES</h1>
-    <div class="rounded-circle hamburger">
-        <span class="hamb-line"></span>
-        <span class="hamb-line"></span>
-        <span class="hamb-line"></span>
+    <div class="row headline">
+        <div class="col-10 .col-lg-10 col-md-9 col-sm-8">
+            <h1>MEDIA APPEREANCES</h1>
+        </div>
+
+        <div class="col-2 .col-lg-2 col-md-3 col-sm-4 rounded-circle hamburger">
+            <span class="hamb-line"></span>
+            <span class="hamb-line"></span>
+            <span class="hamb-line"></span>
+        </div>
+
     </div>
 
-    <div class="container main">
-        <div class="container black">
+    <div class="row justify-content-around main">
+        <div class="col-3 black">
             <h4>Science</h4>
             <h4>Magazine</h4>
             <h3>11. 12. 2018</h3>
@@ -32,10 +39,10 @@
                 Albert-László Barabási translates almost a decade of scholarly research on the science
                 of success into a lively...
             </p>
-            <button>READ MORE...</button>
+            <button class="button">READ MORE</button>
         </div>
 
-        <div class="container white">
+        <div class="col-3 white">
             <h4>Nature</h4>
             <h3>27. 11. 2018</h3>
             <p>
@@ -45,13 +52,16 @@
                 Mapping
                 It Out: Atlas of Contemporary Cartographies exhibition at the Serpentine Gallery in London...
             </p>
-            <button>READ MORE...</button>
+            <button class="button">READ MORE</button>
         </div>
 
-        <div class="container black">
-            <button class='button play'></button>
+        <div class="col-3 black">
+            <div class="rounded-circle playcontainer">
+                <button class='play'></button>
+
+            </div>
             <h3>Lecture at NYU</h3>
-            <button>WATCH</button>
+            <button class="button">WATCH</button>
         </div>
 
     </div>
